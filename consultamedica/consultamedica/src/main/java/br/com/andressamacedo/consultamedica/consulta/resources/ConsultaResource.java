@@ -24,9 +24,7 @@ public class ConsultaResource {
                 .buildAndExpand(novaConsulta.getIdConsulta()).toUri();
         return ResponseEntity.created(uri).body(novaConsulta);
 
-        // Meu jeito
-//        Consulta novaConsulta = consultaService.cadastrarConsulta(consulta);
-//        return ResponseEntity.status(HttpStatus.CREATED).body(novaConsulta);
+
     }
 
     @GetMapping
